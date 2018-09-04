@@ -1,0 +1,14 @@
+
+1) realizzare una rubbrica per cognome
+
+2) realizzare una rubbrica a cui si possa accedere 
+sia per nome che per cognome 
+
+3) realizzare un'albero di ricerca binaria di caratteri 
+mediante un'array
+
+4) provare a definire le primitive in modo iterativo
+(e buona fortuna!)
+
+5) definire una variante della funzione "ricerca" che restituisca
+una lista di TUTTI gli elementi che contengono il campo informativo richiesto.

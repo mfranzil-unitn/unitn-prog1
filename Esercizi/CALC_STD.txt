@@ -1,0 +1,10 @@
+1) modificare il programma calcola in modo che possa leggere anche
+identificatori (es. "x", "z1") e, quando l'espressione viene valutata,
+ne chieda il valore.
+
+2) modificare il programma di cui sopra in modo che "riconosca" le
+stesse variabili anche in diverse espressioni.  (suggerimento:
+utilizzare un albero di ricerca binaria per le entry "name").
+
+
+

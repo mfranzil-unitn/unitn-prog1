@@ -1,0 +1,14 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ESERCIZI PROPOSTI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+prendere i programmi sulle funzioni ricorsive e realizzare 
+il "trace" con variabile "depth" static
+
+
+Prendere programmi complessi precedenti e separarli su piu' file.
+
+ES:
+STRUCT/persone3.cc
+
+
