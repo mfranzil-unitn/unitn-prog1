@@ -1,0 +1,271 @@
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Coda vuota!
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Coda vuota
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Primo elemento = 1
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+1 
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Coda vuota
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Primo elemento = 1
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+1 2 3 
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Primo elemento = 1
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+1 2 3 4 5 
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Primo elemento = 3
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+3 4 5 
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Valore: 
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Primo elemento = 3
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+3 4 5 6 7 
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Coda vuota!
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
+Coda vuota
+
+Operazioni possibili:
+Enqueue (e)
+Dequeue (d)
+First (f)
+Print (p)
+Quit (q)
