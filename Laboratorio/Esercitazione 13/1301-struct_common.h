@@ -3,9 +3,7 @@
 
 using namespace std;
 
-enum retval { FAIL, OK };
+enum retval { FAIL,
+              OK };
 
 #endif
-
-
-

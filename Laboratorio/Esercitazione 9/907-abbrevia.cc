@@ -11,10 +11,10 @@
   un array di caratteri e NON una stringa) 
 */
 
-#include <iostream>
-#include <fstream>
 #include <cstdlib>
 #include <cstring>
+#include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -24,63 +24,62 @@ const int LUNGHEZZA_RIGA = 256;
 const int LUNGHEZZA_PAROLA = 4;
 const char DELIMITATORI[] = " ,.;:-";
 
-int main (int argc, char * argv[]) 
-{
-  fstream myin, myout;
-  char c;
-  
-  if (argc < 3) {
-    cerr << "Sintassi: ./a.out <in> <out>.\n";
-    exit(EXIT_FAILURE);
-  }
-  
-  myin.open(argv[1], ios::in);
-  if (myin.fail()) {
-     cerr << "Il file " << argv[1] << " non esiste\n";
-     exit(EXIT_FAILURE);
-  }
+int main(int argc, char* argv[]) {
+    fstream myin, myout;
+    char c;
 
-  myout.open(argv[2], ios::out);
-
-  char riga[LUNGHEZZA_RIGA];
-  char parola[LUNGHEZZA_PAROLA + 2];
-  while (myin.getline(riga, LUNGHEZZA_RIGA)) {
-    int pos = 0, lun = strlen(riga);
-    for(int i = 0; i < lun; i++) {
-      if(strchr(DELIMITATORI, riga[i]) > 0) {
-        int j;
-        for(j = 0; j < min(LUNGHEZZA_PAROLA, i - pos); j++) {
-          parola[j] = riga[pos + j];
-        }
-        parola[j] = '\0';
-        if(i - pos > LUNGHEZZA_PAROLA) {
-          strcat(parola, ".");
-        }
-        myout << parola << riga[i];
-        pos = i + 1;
-      }
+    if (argc < 3) {
+        cerr << "Sintassi: ./a.out <in> <out>.\n";
+        exit(EXIT_FAILURE);
     }
-    // Ultima parola della riga
-    if(pos < lun) {
-      int j;
-      for(j = 0; j < min(LUNGHEZZA_PAROLA, lun - pos); j++) {
-        parola[j] = riga[pos + j];
-      }
-      parola[j] = '\0';
-      if(lun - pos > LUNGHEZZA_PAROLA) {
-        strcat(parola, ".");
-      }
-      myout << parola;
+
+    myin.open(argv[1], ios::in);
+    if (myin.fail()) {
+        cerr << "Il file " << argv[1] << " non esiste\n";
+        exit(EXIT_FAILURE);
     }
-    myout << endl;
-  }
 
-  myin.close();
-  myout.close();
+    myout.open(argv[2], ios::out);
 
-  return 0;
+    char riga[LUNGHEZZA_RIGA];
+    char parola[LUNGHEZZA_PAROLA + 2];
+    while (myin.getline(riga, LUNGHEZZA_RIGA)) {
+        int pos = 0, lun = strlen(riga);
+        for (int i = 0; i < lun; i++) {
+            if (strchr(DELIMITATORI, riga[i]) > 0) {
+                int j;
+                for (j = 0; j < min(LUNGHEZZA_PAROLA, i - pos); j++) {
+                    parola[j] = riga[pos + j];
+                }
+                parola[j] = '\0';
+                if (i - pos > LUNGHEZZA_PAROLA) {
+                    strcat(parola, ".");
+                }
+                myout << parola << riga[i];
+                pos = i + 1;
+            }
+        }
+        // Ultima parola della riga
+        if (pos < lun) {
+            int j;
+            for (j = 0; j < min(LUNGHEZZA_PAROLA, lun - pos); j++) {
+                parola[j] = riga[pos + j];
+            }
+            parola[j] = '\0';
+            if (lun - pos > LUNGHEZZA_PAROLA) {
+                strcat(parola, ".");
+            }
+            myout << parola;
+        }
+        myout << endl;
+    }
+
+    myin.close();
+    myout.close();
+
+    return 0;
 }
 
 int min(int a, int b) {
-  return a < b ? a : b;
+    return a < b ? a : b;
 }

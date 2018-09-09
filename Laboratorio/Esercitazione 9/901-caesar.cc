@@ -9,9 +9,9 @@
   ). Tutti gli altri caratteri rimangono inalterati.
 */
 
-#include <iostream>
-#include <cstring>
 #include <cstdlib>
+#include <cstring>
+#include <iostream>
 
 using namespace std;
 
@@ -21,36 +21,36 @@ void codifica(char t[], const char s[]);
 char caesar(char c);
 
 int main(int argc, char* argv[]) {
-  char sorgente[LUNGHEZZA], destinazione[LUNGHEZZA];
-  if(argc != 2) {
-    cerr << "Introdurre almeno un parametro." << endl;
-    exit(EXIT_FAILURE);
-  }
-  // L'utilizzo di strcpy e' potenzialmente insicuro;
-  // strncpy "tronca" la stringa alla dimensione
-  // fissata prima di copiarla nella destinazione
-  strncpy(sorgente, argv[1], LUNGHEZZA - 1);
-  codifica(destinazione, sorgente);
-  cout << "Stringa codificata: " << destinazione << endl;
-  return 0;
+    char sorgente[LUNGHEZZA], destinazione[LUNGHEZZA];
+    if (argc != 2) {
+        cerr << "Introdurre almeno un parametro." << endl;
+        exit(EXIT_FAILURE);
+    }
+    // L'utilizzo di strcpy e' potenzialmente insicuro;
+    // strncpy "tronca" la stringa alla dimensione
+    // fissata prima di copiarla nella destinazione
+    strncpy(sorgente, argv[1], LUNGHEZZA - 1);
+    codifica(destinazione, sorgente);
+    cout << "Stringa codificata: " << destinazione << endl;
+    return 0;
 }
 
 void codifica(char t[], const char s[]) {
-  int i;
-  for(i = 0; i < strlen(s); i++) {
-    t[i] = caesar(s[i]);
-  }
-  t[i] = '\0';
+    int i;
+    for (i = 0; i < strlen(s); i++) {
+        t[i] = caesar(s[i]);
+    }
+    t[i] = '\0';
 }
 
 char caesar(char c) {
-  char r = c;
-  if(isalpha(c)) {
-    if(islower(c)) {
-      r = (c - 'a' + 3) % 26 + 'a';
-    } else {
-      r = (c - 'A' + 3) % 26 + 'A';
+    char r = c;
+    if (isalpha(c)) {
+        if (islower(c)) {
+            r = (c - 'a' + 3) % 26 + 'a';
+        } else {
+            r = (c - 'A' + 3) % 26 + 'A';
+        }
     }
-  }
-  return r;
+    return r;
 }

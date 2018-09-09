@@ -9,8 +9,8 @@
 #define __KEY_VALUE_H_
 
 struct key_value {
-  int key;
-  int value;
+    int key;
+    int value;
 };
 
 #endif

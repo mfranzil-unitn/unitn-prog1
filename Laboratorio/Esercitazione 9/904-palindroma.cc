@@ -9,9 +9,9 @@
   di funzioni ausiliarie qualora ritenuto utile.`
 */
 
-#include <iostream>
-#include <cstring>
 #include <cstdlib>
+#include <cstring>
+#include <iostream>
 
 using namespace std;
 
@@ -21,26 +21,26 @@ bool palindroma(const char s[]);
 bool palindroma(const char s[], int start, int end);
 
 int main(int argc, char* argv[]) {
-  char stringa[LUNGHEZZA];
-  cin.getline(stringa, LUNGHEZZA);
-  cout << "La stringa introdotta" << (!palindroma(stringa) ? " non" : "") <<  " e' palindroma.\n";
-  return 0;
+    char stringa[LUNGHEZZA];
+    cin.getline(stringa, LUNGHEZZA);
+    cout << "La stringa introdotta" << (!palindroma(stringa) ? " non" : "") << " e' palindroma.\n";
+    return 0;
 }
 
 bool palindroma(const char s[]) {
-  return palindroma(s, 0, strlen(s));
+    return palindroma(s, 0, strlen(s));
 }
 
 bool palindroma(const char s[], int start, int end) {
-  /*
+    /*
     Oppure:
       return (end > start) ? 
         ( (s[start] == s[end]) && palindroma(s, start + 1, end - 1) ) : 
         true;
   */
-  bool ris = true;
-  if(end > start) {
-    ris = (s[start] == s[end - 1]) && palindroma(s, start + 1, end - 1);
-  }
-  return ris;
+    bool ris = true;
+    if (end > start) {
+        ris = (s[start] == s[end - 1]) && palindroma(s, start + 1, end - 1);
+    }
+    return ris;
 }

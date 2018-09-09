@@ -15,9 +15,10 @@
   1,2,3,4,5
 */
 
-#include <iostream>
-#include <fstream>
 #include <cstdlib>
+#include <cstring>
+#include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -28,66 +29,65 @@ const int DIMENSIONE = 4;
 
 void stampaMatrice(int matrice[DIMENSIONE][DIMENSIONE]);
 
-int main (int argc, char * argv[]) 
-{
-  int m[DIMENSIONE][DIMENSIONE] = {};
-  fstream myin, myout;
-  char c;
-  
-  if (argc < 3) {
-    cerr << "Sintassi: ./a.out <in> <out>.\n";
-    exit(EXIT_FAILURE);
-  }
-  
-  myin.open(argv[1], ios::in);
-  if (myin.fail()) {
-     cerr << "Il file " << argv[1] << " non esiste\n";
-     exit(EXIT_FAILURE);
-  }
+int main(int argc, char* argv[]) {
+    int m[DIMENSIONE][DIMENSIONE] = {};
+    fstream myin, myout;
+    char c;
 
-  char riga[LUNGHEZZA_RIGA];
-  char parola[LUNGHEZZA_PAROLA + 1];
-  int num_riga = 0;
-  while (myin.getline(riga, LUNGHEZZA_RIGA) && num_riga < DIMENSIONE) {
-    int pos = 0, lun = strlen(riga);
-    int num_colonna = 0;
-    for(int i = 0; i < lun && num_colonna < DIMENSIONE; i++) {
-      if(riga[i] == DELIMITATORE) {
-        int j;
-        for(j = 0; j < min(LUNGHEZZA_PAROLA, i - pos); j++) {
-          parola[j] = riga[pos + j];
+    if (argc < 3) {
+        cerr << "Sintassi: ./a.out <in> <out>.\n";
+        exit(EXIT_FAILURE);
+    }
+
+    myin.open(argv[1], ios::in);
+    if (myin.fail()) {
+        cerr << "Il file " << argv[1] << " non esiste\n";
+        exit(EXIT_FAILURE);
+    }
+
+    char riga[LUNGHEZZA_RIGA];
+    char parola[LUNGHEZZA_PAROLA + 1];
+    int num_riga = 0;
+    while (myin.getline(riga, LUNGHEZZA_RIGA) && num_riga < DIMENSIONE) {
+        int pos = 0, lun = strlen(riga);
+        int num_colonna = 0;
+        for (int i = 0; i < lun && num_colonna < DIMENSIONE; i++) {
+            if (riga[i] == DELIMITATORE) {
+                int j;
+                for (j = 0; j < min(LUNGHEZZA_PAROLA, i - pos); j++) {
+                    parola[j] = riga[pos + j];
+                }
+                parola[j] = '\0';
+                m[num_riga][num_colonna] = atoi(parola);
+                pos = i + 1;
+                num_colonna++;
+            }
         }
-        parola[j] = '\0';
-        m[num_riga][num_colonna] = atoi(parola);
-        pos = i + 1;
-        num_colonna++;
-      }
+        // L'eventuale ultima "parola" della riga
+        if (num_colonna < DIMENSIONE && pos < lun) {
+            int j;
+            for (j = 0; j < min(LUNGHEZZA_PAROLA, lun - pos); j++) {
+                parola[j] = riga[pos + j];
+            }
+            parola[j] = '\0';
+            m[num_riga][num_colonna] = atoi(parola);
+            // Non serve aggiornare "pos" o "num_colonna"
+        }
+        num_riga++;
     }
-    // L'eventuale ultima "parola" della riga
-    if(num_colonna < DIMENSIONE && pos < lun) {
-      int j;
-      for(j = 0; j < min(LUNGHEZZA_PAROLA, lun - pos); j++) {
-        parola[j] = riga[pos + j];
-      }
-      parola[j] = '\0';
-      m[num_riga][num_colonna] = atoi(parola);
-      // Non serve aggiornare "pos" o "num_colonna"
-    }
-    num_riga++;
-  }
 
-  myin.close();
+    myin.close();
 
-  stampaMatrice(m);
+    stampaMatrice(m);
 
-  return 0;
+    return 0;
 }
 
 void stampaMatrice(int matrice[DIMENSIONE][DIMENSIONE]) {
-  for(int i = 0; i < DIMENSIONE; i++) {
-    for(int j = 0; j < DIMENSIONE; j++) {
-      cout << matrice[i][j] << '\t';
+    for (int i = 0; i < DIMENSIONE; i++) {
+        for (int j = 0; j < DIMENSIONE; j++) {
+            cout << matrice[i][j] << '\t';
+        }
+        cout << '\n';
     }
-    cout << '\n';
-  }
 }

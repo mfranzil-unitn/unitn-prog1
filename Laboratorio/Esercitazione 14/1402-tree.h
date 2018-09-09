@@ -1,22 +1,21 @@
-#ifndef TREE_H 
-#define TREE_H 
+#ifndef TREE_H
+#define TREE_H
 
-#include "02-key_value.h"
+#include "1402-key_value.h"
 
-struct nodo; 
+struct nodo;
 
-typedef nodo * tree;
+typedef nodo *tree;
 
-struct nodo 
-{  
-  key_value * kv; 
-  tree left;  
-  tree right;
+struct nodo {
+    key_value *kv;
+    tree left;
+    tree right;
 };
 
 void init(tree &);
-tree inserisci(tree,key_value *);
-tree cerca (tree , int );
+tree inserisci(tree, key_value *);
+tree cerca(tree, int);
 void stampa_ordinata(tree);
 
 #endif

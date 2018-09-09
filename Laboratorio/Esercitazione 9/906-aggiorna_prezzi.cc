@@ -17,45 +17,44 @@
   33 100 2 900
 */
 
-#include <iostream>
-#include <fstream>
 #include <cstdlib>
+#include <fstream>
+#include <iostream>
 
 using namespace std;
 
-int main(int argc, char * argv[]) 
-{
-  fstream myin, myout;
-  int n;
-  
-  if (argc != 3) {
-    cerr << "Sintassi: ./a.out <in> <out>." << endl;
-    exit(EXIT_FAILURE);
-  }
-  
-  myin.open(argv[1], ios::in);
-  if (myin.fail()) {
-    cerr << "Il file " << argv[1] << " non esiste.\n";
-    exit(EXIT_FAILURE);
-  }
-  
-  myout.open(argv[2], ios::out);
+int main(int argc, char* argv[]) {
+    fstream myin, myout;
+    int n;
 
-  myin >> n;
-  while (!myin.eof()) {
-    if(n < 50) {
-      myout << n * 1.08;
-    } else if(n >= 50 && n < 100) {
-      myout << n * 1.05;
-    } else {
-      myout << n * 1.02;
+    if (argc != 3) {
+        cerr << "Sintassi: ./a.out <in> <out>." << endl;
+        exit(EXIT_FAILURE);
     }
-    myout << " ";
+
+    myin.open(argv[1], ios::in);
+    if (myin.fail()) {
+        cerr << "Il file " << argv[1] << " non esiste.\n";
+        exit(EXIT_FAILURE);
+    }
+
+    myout.open(argv[2], ios::out);
+
     myin >> n;
-  }
+    while (!myin.eof()) {
+        if (n < 50) {
+            myout << n * 1.08;
+        } else if (n >= 50 && n < 100) {
+            myout << n * 1.05;
+        } else {
+            myout << n * 1.02;
+        }
+        myout << " ";
+        myin >> n;
+    }
 
-  myout.close();
-  myin.close();
+    myout.close();
+    myin.close();
 
-  return 0;
+    return 0;
 }

@@ -14,42 +14,42 @@
   6: #
 */
 
-#include <iostream>
-#include <cstring>
 #include <cstdlib>
+#include <cstring>
+#include <iostream>
 
 using namespace std;
 
 int main(int argc, char* argv[]) {
-  if(argc < 2) {
-    cerr << "Troppo pochi argomenti.\n";
-    return -1;
-  }
-  int max_occorrenze = 0;
-  // Doppio passaggio: prima cerco la parola piu' lunga
-  // => massima dimensione array frequenze
-  for(int i = 1; i < argc; i++) {
-    int lun = strlen(argv[i]);
-    if(lun > max_occorrenze) {
-      max_occorrenze = lun;
+    if (argc < 2) {
+        cerr << "Troppo pochi argomenti.\n";
+        return -1;
     }
-  }
-  // Alloco e inizializzo tutti gli elementi dell'array
-  // a zero
-  int* frequenze = new int[max_occorrenze] {0};
-  // Ora conto quante parole hanno la stessa lunghezza
-  for(int i = 1; i < argc; i++) {
-    frequenze[strlen(argv[i]) - 1]++;
-  }
-  // Infine stampo l'istogramma
-  for(int i = 0; i < max_occorrenze; i++) {
-    cout << "Argomenti di lunghezza [" << i + 1 << "]: ";
-    for(int j = 0; j < frequenze[i]; j++) {
-      cout << "#";
+    int max_occorrenze = 0;
+    // Doppio passaggio: prima cerco la parola piu' lunga
+    // => massima dimensione array frequenze
+    for (int i = 1; i < argc; i++) {
+        int lun = strlen(argv[i]);
+        if (lun > max_occorrenze) {
+            max_occorrenze = lun;
+        }
     }
-    cout << endl; 
-  }
-  // Dealloco l'array frequenze
-  delete [] frequenze;
-  return 0;
+    // Alloco e inizializzo tutti gli elementi dell'array
+    // a zero
+    int* frequenze = new int[max_occorrenze]{0};
+    // Ora conto quante parole hanno la stessa lunghezza
+    for (int i = 1; i < argc; i++) {
+        frequenze[strlen(argv[i]) - 1]++;
+    }
+    // Infine stampo l'istogramma
+    for (int i = 0; i < max_occorrenze; i++) {
+        cout << "Argomenti di lunghezza [" << i + 1 << "]: ";
+        for (int j = 0; j < frequenze[i]; j++) {
+            cout << "#";
+        }
+        cout << endl;
+    }
+    // Dealloco l'array frequenze
+    delete[] frequenze;
+    return 0;
 }
