@@ -16,25 +16,25 @@ using namespace std;
 void media(long s, int ctr);
 
 int main() {
-   media(0.0, 0);
-   return(0);
+    media(0.0, 0);
+    return (0);
 }
 
 void media(long s, int ctr) {
-   double n;
-   char c;
-   cout << "Inserire un numero: ";
-   cin >> n;
-   // Oppure: s = s + n;
-   s += n;
-   // Oppure: ctr = ctr + 1;
-   ctr++;
-   cout << "Media parziale: " << s/(double)ctr << endl;
-   cout << "Vuoi continuare? [s/n] ";
-   cin >> c;
-   if(c == 's' || c == 'S') {
-      // Passo ricorsivo
-      media(s, ctr);
-   }
-   // Caso base: l'utente non ha scelto 's' o 'S'
+    double n;
+    char c;
+    cout << "Inserire un numero: ";
+    cin >> n;
+    // Oppure: s = s + n;
+    s += n;
+    // Oppure: ctr = ctr + 1;
+    ctr++;
+    cout << "Media parziale: " << s / (double)ctr << endl;
+    cout << "Vuoi continuare? [s/n] ";
+    cin >> c;
+    if (c == 's' || c == 'S') {
+        // Passo ricorsivo
+        media(s, ctr);
+    }
+    // Caso base: l'utente non ha scelto 's' o 'S'
 }

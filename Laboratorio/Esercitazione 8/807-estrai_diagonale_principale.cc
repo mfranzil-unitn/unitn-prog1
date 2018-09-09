@@ -14,33 +14,33 @@ void stampaVettore(const int d[SIZE]);
 void diagonalePrincipale(const int a[SIZE][SIZE], int d[SIZE]);
 
 int main() {
-  int a[SIZE][SIZE] = {{0, 1, 3}, {4, 5, 6}, {8, 10, 12}};
-  int v[SIZE];
-  stampaMatrice(a);
-  diagonalePrincipale(a, v);
-  cout << "Diagonale principale: " << endl;
-  stampaVettore(v);
-  return 0;
+    int a[SIZE][SIZE] = {{0, 1, 3}, {4, 5, 6}, {8, 10, 12}};
+    int v[SIZE];
+    stampaMatrice(a);
+    diagonalePrincipale(a, v);
+    cout << "Diagonale principale: " << endl;
+    stampaVettore(v);
+    return 0;
 }
 
 void stampaMatrice(const int a[SIZE][SIZE]) {
- 	for (int i = 0; i < SIZE; i++) {
- 	  for (int j = 0; j < SIZE; j++) {
-      cout << a[i][j] << "\t";
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            cout << a[i][j] << "\t";
+        }
+        cout << endl;
     }
-    cout << endl;
-  }
 }
 
 void diagonalePrincipale(const int a[SIZE][SIZE], int d[SIZE]) {
- 	for (int i = 0; i < SIZE; i++) {
-    d[i] = a[i][i];
-  }
+    for (int i = 0; i < SIZE; i++) {
+        d[i] = a[i][i];
+    }
 }
 
 void stampaVettore(const int v[SIZE]) {
- 	for (int i = 0; i < SIZE; i++) {
-    cout << v[i] << "\t";
-  }
-  cout << endl;
+    for (int i = 0; i < SIZE; i++) {
+        cout << v[i] << "\t";
+    }
+    cout << endl;
 }

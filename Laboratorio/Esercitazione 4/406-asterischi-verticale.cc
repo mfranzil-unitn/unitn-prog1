@@ -3,22 +3,19 @@
 // verticale
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  int numero;
-  
-  cout << "Inserisci il numero di asterischi da stampare: ";
-  cin >> numero;
+int main() {
+    int numero;
 
-  for (int i=0;i<numero;i++)
-    {
-      cout << "*" << endl;
+    cout << "Inserisci il numero di asterischi da stampare: ";
+    cin >> numero;
+
+    for (int i = 0; i < numero; i++) {
+        cout << "*" << endl;
     }
-  cout << endl;
+    cout << endl;
 
-  return (0);
+    return (0);
 }
-

@@ -8,42 +8,36 @@
 // il massimo sara' stampato a video dal main
 //
 
-#include <iostream> 
+#include <iostream>
 
 using namespace std;
 
 // dichiarazione di funzione
-int massimo (int,int);
-
+int massimo(int, int);
 
 // dichiarazione funzione principale
-int main() 
-{ 
-  int a,b,pippo;
+int main() {
+    int a, b, pippo;
 
-  cout << "Inserisci un intero: ";
-  cin >> a;
-  cout << "Inserisci un intero: ";
-  cin >> b;
+    cout << "Inserisci un intero: ";
+    cin >> a;
+    cout << "Inserisci un intero: ";
+    cin >> b;
 
-  pippo=massimo(a,b);
-  cout << pippo << endl;
+    pippo = massimo(a, b);
+    cout << pippo << endl;
 
-  return(0);
+    return (0);
 }
 
 //definizione funzione fibonacci
-int massimo (int a, int b)
-{
-  int app;
-  
-  if (a>b)
-    {
-      app=a;
+int massimo(int a, int b) {
+    int app;
+
+    if (a > b) {
+        app = a;
+    } else {
+        app = b;
     }
-  else
-    {
-      app=b;
-    }
-  return(app);
+    return (app);
 }

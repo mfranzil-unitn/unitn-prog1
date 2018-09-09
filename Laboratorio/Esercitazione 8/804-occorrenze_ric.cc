@@ -11,7 +11,9 @@
 
 using namespace std;
 
-enum ESITO {VITTORIA, SCONFITTA, PAREGGIO};
+enum ESITO { VITTORIA,
+             SCONFITTA,
+             PAREGGIO };
 
 const int DIM = 20;
 
@@ -19,19 +21,19 @@ int contaOccorrenzeEsito(ESITO e, const ESITO sequenza[], int dim);
 int contaOccorrenzeEsitoRic(ESITO e, const ESITO sequenza[], int start, int end);
 
 int main() {
-  ESITO partite[DIM] = {VITTORIA, SCONFITTA, PAREGGIO, PAREGGIO, SCONFITTA, PAREGGIO, PAREGGIO, SCONFITTA, PAREGGIO, VITTORIA,
-                     VITTORIA, VITTORIA, PAREGGIO, SCONFITTA, SCONFITTA, VITTORIA, PAREGGIO, SCONFITTA, VITTORIA, VITTORIA};
+    ESITO partite[DIM] = {VITTORIA, SCONFITTA, PAREGGIO, PAREGGIO, SCONFITTA, PAREGGIO, PAREGGIO, SCONFITTA, PAREGGIO, VITTORIA,
+                          VITTORIA, VITTORIA, PAREGGIO, SCONFITTA, SCONFITTA, VITTORIA, PAREGGIO, SCONFITTA, VITTORIA, VITTORIA};
 
-  int vittorie, sconfitte, pareggi;
-  vittorie = contaOccorrenzeEsito(VITTORIA, partite, DIM);
-  sconfitte = contaOccorrenzeEsito(SCONFITTA, partite, DIM);
-  pareggi = contaOccorrenzeEsito(PAREGGIO, partite, DIM);
-  cout << "Numero vittorie: " << vittorie  << ", numero sconfitte: "
-       << sconfitte << ", numero pareggi: " << pareggi << endl;
-  
-  if((vittorie + sconfitte + pareggi) == DIM) {
-    cout << "I conti tornano!\n";
-  }
+    int vittorie, sconfitte, pareggi;
+    vittorie = contaOccorrenzeEsito(VITTORIA, partite, DIM);
+    sconfitte = contaOccorrenzeEsito(SCONFITTA, partite, DIM);
+    pareggi = contaOccorrenzeEsito(PAREGGIO, partite, DIM);
+    cout << "Numero vittorie: " << vittorie << ", numero sconfitte: "
+         << sconfitte << ", numero pareggi: " << pareggi << endl;
+
+    if ((vittorie + sconfitte + pareggi) == DIM) {
+        cout << "I conti tornano!\n";
+    }
 }
 
 /*
@@ -45,17 +47,17 @@ int contaOccorrenzeEsito(ESITO e, const ESITO sequenza[], int dim) {
 */
 
 int contaOccorrenzeEsito(ESITO e, const ESITO sequenza[], int dim) {
-  return contaOccorrenzeEsitoRic(e, sequenza, 0, dim);
+    return contaOccorrenzeEsitoRic(e, sequenza, 0, dim);
 }
 
 // Calcola tramite la bisezione
 int contaOccorrenzeEsitoRic(ESITO e, const ESITO sequenza[], int start, int end) {
-  int ris = 0;
-  if(end - start == 0) {
-    ris = (e == sequenza[start]) ? 1 : 0;
-  } else if (end > start) {
-    ris = contaOccorrenzeEsitoRic(e, sequenza, start, start + (end - start) / 2) +
-          contaOccorrenzeEsitoRic(e, sequenza, start + ((end - start) / 2) + 1, end);
-  }
-  return ris;
+    int ris = 0;
+    if (end - start == 0) {
+        ris = (e == sequenza[start]) ? 1 : 0;
+    } else if (end > start) {
+        ris = contaOccorrenzeEsitoRic(e, sequenza, start, start + (end - start) / 2) +
+              contaOccorrenzeEsitoRic(e, sequenza, start + ((end - start) / 2) + 1, end);
+    }
+    return ris;
 }

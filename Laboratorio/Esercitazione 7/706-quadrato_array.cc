@@ -16,32 +16,32 @@ const int DIM = 5;
 void quadratoArray(const int src[], long dst[], int dim);
 
 int main() {
-  int a[] = {0, 1, 2, 3, 40000};
-  // Inizializzazione a costante
-  long b[DIM] = {0l};
+    int a[] = {0, 1, 2, 3, 40000};
+    // Inizializzazione a costante
+    long b[DIM] = {0l};
 
-  // Lasciamo il ciclo di stampa nella main
-  int i;
-  cout << "Array: {";
-  for(i = 0; i < DIM - 1; i++) {
-    cout << a[i] << ", ";
-  }
-  cout << a[i] << "}" << endl;
-  
-  quadratoArray(a, b, DIM);
+    // Lasciamo il ciclo di stampa nella main
+    int i;
+    cout << "Array: {";
+    for (i = 0; i < DIM - 1; i++) {
+        cout << a[i] << ", ";
+    }
+    cout << a[i] << "}" << endl;
 
-  cout << "Array: {";
-  for(i = 0; i < DIM - 1; i++) {
-    cout << b[i] << ", ";
-  }
-  cout << b[i] << "}" << endl;
+    quadratoArray(a, b, DIM);
+
+    cout << "Array: {";
+    for (i = 0; i < DIM - 1; i++) {
+        cout << b[i] << ", ";
+    }
+    cout << b[i] << "}" << endl;
 }
 
 // E' importante usare nomi significativi per i parametri,
 // e non affidarsi solo all'ordine di inserimento
 void quadratoArray(const int src[], long dst[], int dim) {
-  // Non occorre ritornare nulla
-  for(int i = 0; i < dim; i++) {
-    dst[i] = src[i] * src[i];
-  }
+    // Non occorre ritornare nulla
+    for (int i = 0; i < dim; i++) {
+        dst[i] = src[i] * src[i];
+    }
 }

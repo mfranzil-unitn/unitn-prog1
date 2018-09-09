@@ -15,17 +15,16 @@ using namespace std;
 
 int MCD(int, int);
 
-int main(){
-   int x, y;
-   cout << "Inserire il primo numero: ";
-   cin >> x;
-   cout << "Inserire il secondo numero: ";
-   cin >> y;
-   cout << "MCD(" << x << ", " << y << ") = " << 
-        ((x > y) ? MCD(x,y) : MCD(y, x)) << endl;
-   return 0;
+int main() {
+    int x, y;
+    cout << "Inserire il primo numero: ";
+    cin >> x;
+    cout << "Inserire il secondo numero: ";
+    cin >> y;
+    cout << "MCD(" << x << ", " << y << ") = " << ((x > y) ? MCD(x, y) : MCD(y, x)) << endl;
+    return 0;
 }
 
-int MCD(int a, int b){
-   return (b == 0) ? a : MCD(b, a % b);
+int MCD(int a, int b) {
+    return (b == 0) ? a : MCD(b, a % b);
 }

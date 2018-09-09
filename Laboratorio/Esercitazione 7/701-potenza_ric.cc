@@ -21,12 +21,12 @@ using namespace std;
 int potenza(int, int);
 int potenza_ric(int, int, int);
 
-int main(){
-   int i, j;
-   cout << "Inserire base ed esponente: ";
-   cin >> i >> j;
-   cout << i << " ^ " << j << " = " << potenza(i, j) << endl;
-   return(0);
+int main() {
+    int i, j;
+    cout << "Inserire base ed esponente: ";
+    cin >> i >> j;
+    cout << i << " ^ " << j << " = " << potenza(i, j) << endl;
+    return (0);
 }
 
 /*
@@ -50,17 +50,17 @@ int potenza(int n, int m) {
    caso, puo' esserlo in altri
 */
 int potenza(int n, int m) {
-  potenza_ric(1, n, m);
+    potenza_ric(1, n, m);
 }
 
 int potenza_ric(int x, int n, int m) {
-   int ris;
-   if(x > m){
-      // Caso base
-      ris = 1;
-   } else {
-      // Passo ricorsivo
-      ris = n * potenza_ric(x + 1, n, m);
-   }
-   return ris;
+    int ris;
+    if (x > m) {
+        // Caso base
+        ris = 1;
+    } else {
+        // Passo ricorsivo
+        ris = n * potenza_ric(x + 1, n, m);
+    }
+    return ris;
 }

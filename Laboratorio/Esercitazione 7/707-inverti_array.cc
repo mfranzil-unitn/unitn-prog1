@@ -14,7 +14,6 @@
   (E' possibile utilizzare la funzione 'scambia' nell'implementazione)
 */
 
-
 #include <iostream>
 
 using namespace std;
@@ -27,45 +26,45 @@ void leggiArray(int a[], int& dim);
 void scambia(int& a, int& b);
 
 int main() {
-  int a[SIZE];
-  // "n" non e' inizializzato perche' viene
-  // comunque sovrascritto da "leggiArray"
-  int n;
-  leggiArray(a, n);
-  invertiArray(a, n);
-  stampaArray(a, n);
-  return 0;
+    int a[SIZE];
+    // "n" non e' inizializzato perche' viene
+    // comunque sovrascritto da "leggiArray"
+    int n;
+    leggiArray(a, n);
+    invertiArray(a, n);
+    stampaArray(a, n);
+    return 0;
 }
 
 void leggiArray(int a[], int& dim) {
-  do {
-    cout << "Dimensione array: ";
-    cin >> dim;
-    if(dim > SIZE) {
-      cout << "La dimensione deve essere inferiore a: " << SIZE << endl;
+    do {
+        cout << "Dimensione array: ";
+        cin >> dim;
+        if (dim > SIZE) {
+            cout << "La dimensione deve essere inferiore a: " << SIZE << endl;
+        }
+    } while (dim > SIZE);
+    for (int i = 0; i < dim; i++) {
+        cout << i << ": ";
+        cin >> a[i];
     }
-  } while (dim > SIZE);
-  for(int i = 0; i < dim; i++) {
-    cout << i << ": ";
-    cin >> a[i];
-  }
 }
 
 void stampaArray(const int a[], int dim) {
-  for(int i = 0; i < dim; i++) {
-    cout << a[i] << " ";
-  }
-  cout << endl;
+    for (int i = 0; i < dim; i++) {
+        cout << a[i] << " ";
+    }
+    cout << endl;
 }
 
 void invertiArray(int a[], int dim) {
-  for(int i = 0; i < dim / 2; i++) {
-    scambia(a[i], a[dim - i - 1]);
-  }
+    for (int i = 0; i < dim / 2; i++) {
+        scambia(a[i], a[dim - i - 1]);
+    }
 }
 
 void scambia(int& a, int& b) {
-  int c = a;
-  a = b;
-  b = c;
+    int c = a;
+    a = b;
+    b = c;
 }
