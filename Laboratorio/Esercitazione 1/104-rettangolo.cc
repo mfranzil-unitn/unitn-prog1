@@ -4,22 +4,20 @@
 // stampare a video l'area del rettangolo
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  int base,altezza,area;
+int main() {
+    int base, altezza, area;
 
-  cout <<"Inserisci il valore di base: ";
-  cin >> base;
-  cout <<"Inserisci il valore dell'altezza: ";
-  cin >> altezza;
+    cout << "Inserisci il valore di base: ";
+    cin >> base;
+    cout << "Inserisci il valore dell'altezza: ";
+    cin >> altezza;
 
-  area=base*altezza;
-  
-  cout << "Il valore dell'area e' " << area << endl;
+    area = base * altezza;
 
-  return (0);
+    cout << "Il valore dell'area e' " << area << endl;
+
+    return (0);
 }
-

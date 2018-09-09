@@ -5,21 +5,19 @@
 // C=(F-32)/1.8
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  int gradi_f;
-  double gradi_c;
+int main() {
+    int gradi_f;
+    double gradi_c;
 
-  cout << "Inserisci i gradi F: ";
-  cin >> gradi_f;
-  
-  gradi_c=(gradi_f-32)/1.8;
+    cout << "Inserisci i gradi F: ";
+    cin >> gradi_f;
 
-  cout << gradi_c << endl;
-  
-  return (0);
+    gradi_c = (gradi_f - 32) / 1.8;
+
+    cout << gradi_c << endl;
+
+    return (0);
 }
-

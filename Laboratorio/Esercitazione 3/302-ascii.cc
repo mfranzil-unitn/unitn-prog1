@@ -1,23 +1,21 @@
 //
-// Acquisire da tastiera un carattere e  
+// Acquisire da tastiera un carattere e
 // stampare a video la sua codifica ASCII.
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  char carattere;
-  int codifica;
-  
-  cout << "Inserisci un carattere: ";
-  cin >> carattere;
+int main() {
+    char carattere;
+    int codifica;
 
-  codifica=carattere;
-  
-  cout << codifica << endl;
+    cout << "Inserisci un carattere: ";
+    cin >> carattere;
 
-  return (0);
+    codifica = carattere;
+
+    cout << codifica << endl;
+
+    return (0);
 }
-

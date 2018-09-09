@@ -4,27 +4,22 @@
 // controllo che la divisione si possa fare
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  float a, b;
-  
-  cout << "Inserisci un reale: ";
-  cin >> a;
-  cout << "Inserisci un reale: ";
-  cin >> b;
+int main() {
+    float a, b;
 
-  if (b!=0)
-    {
-      cout << a/b << endl;
-    }
-  else
-    {
-      cout << "Divisione impossibile" << endl;
+    cout << "Inserisci un reale: ";
+    cin >> a;
+    cout << "Inserisci un reale: ";
+    cin >> b;
+
+    if (b != 0) {
+        cout << a / b << endl;
+    } else {
+        cout << "Divisione impossibile" << endl;
     }
 
-  return (0);
+    return (0);
 }
-

@@ -4,23 +4,21 @@
 // e stamparlo a video
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  char carattere;
-  int codifica;
-  
-  cout << "Inserisci un carattere: ";
-  cin >> carattere;
-    
-  codifica=(carattere-60)*3;
- 
-  carattere= (codifica/3)+60;
-  
-  cout << carattere << endl;
+int main() {
+    char carattere;
+    int codifica;
 
-  return (0);
+    cout << "Inserisci un carattere: ";
+    cin >> carattere;
+
+    codifica = (carattere - 60) * 3;
+
+    carattere = (codifica / 3) + 60;
+
+    cout << carattere << endl;
+
+    return (0);
 }
-

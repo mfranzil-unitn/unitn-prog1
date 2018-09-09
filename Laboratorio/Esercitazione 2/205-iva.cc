@@ -5,21 +5,19 @@
 // stampandolo a video
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  int prezzo;
-  float prezzo_ivato;
+int main() {
+    int prezzo;
+    float prezzo_ivato;
 
-  cout << "Inserisci il prezzo: ";
-  cin >> prezzo;
-  
-  prezzo_ivato=prezzo*1,22;
+    cout << "Inserisci il prezzo: ";
+    cin >> prezzo;
 
-  cout << prezzo_ivato << endl;
-  
-  return (0);
+    prezzo_ivato = prezzo * 1, 22;
+
+    cout << prezzo_ivato << endl;
+
+    return (0);
 }
-

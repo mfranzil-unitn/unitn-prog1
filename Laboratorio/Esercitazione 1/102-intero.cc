@@ -3,18 +3,16 @@
 // e lo stampa a video
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  int a;
+int main() {
+    int a;
 
-  cout <<"Inserisci un intero: ";
-  cin >> a;
-  
-  cout << a << endl;
+    cout << "Inserisci un intero: ";
+    cin >> a;
 
-  return (0);
+    cout << a << endl;
+
+    return (0);
 }
-

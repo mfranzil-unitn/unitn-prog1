@@ -4,23 +4,21 @@
 // 0 altrimenti NON USANDO IF
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  int a,b;
-  bool risposta;
+int main() {
+    int a, b;
+    bool risposta;
 
-  cout << "Inserisci un intero: ";
-  cin >> a;
-  cout << "Inserisci un intero: ";
-  cin >> b;
-  
-  risposta=(a>b);
-  
-  cout << risposta << endl;
+    cout << "Inserisci un intero: ";
+    cin >> a;
+    cout << "Inserisci un intero: ";
+    cin >> b;
 
-  return (0);
+    risposta = (a > b);
+
+    cout << risposta << endl;
+
+    return (0);
 }
-

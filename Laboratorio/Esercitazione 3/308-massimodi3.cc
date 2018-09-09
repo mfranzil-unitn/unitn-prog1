@@ -4,33 +4,29 @@
 // e stamparlo a video
 //
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-int main()
-{
-  float a, b, c, max;
-  
-  cout << "Inserisci un reale: ";
-  cin >> a;
-  cout << "Inserisci un reale: ";
-  cin >> b;
-  cout << "Inserisci un reale: ";
-  cin >> c;
+int main() {
+    float a, b, c, max;
 
-  max=a;
-  
-  if (b>max)
-    {
-      max=b;
+    cout << "Inserisci un reale: ";
+    cin >> a;
+    cout << "Inserisci un reale: ";
+    cin >> b;
+    cout << "Inserisci un reale: ";
+    cin >> c;
+
+    max = a;
+
+    if (b > max) {
+        max = b;
     }
-  if (c>max)
-    {
-      max=c;
+    if (c > max) {
+        max = c;
     }
 
-  cout <<"Il massimo è: " << max << endl;
-  
-  return (0);
+    cout << "Il massimo è: " << max << endl;
+
+    return (0);
 }
-
