@@ -17,10 +17,10 @@ This repo contains material about the following course:
 
 ## Content
 You can find the following material in the repo:
-* Esami svolti/ - solutions for past exams, made by me. Might contain any kind of error.
-* Esercizi/ - exercises handed out by the teacher, divided by category.
-* Laboratorio/ - exercises made during laboratory lessons.
-* tips.txt - notes taking during class, compacted in a single file.
+* `Esami svolti/` - solutions for past exams, made by me. Might contain any kind of error.
+* `Esercizi/` - exercises handed out by the teacher, divided by category.
+* `Laboratorio/` - exercises made during laboratory lessons.
+* `tips.txt` - notes taking during class, compacted in a single file.
 
 ## Contribute
 Feel free to contribute by forking the project and issuing a pull request. Any contribution to the TeX documents are more than welcome.
