@@ -17,9 +17,9 @@ This repo contains material about the following course:
 
 ## Content
 You can find the following material in the repo:
-* Esami svolti/ - solutions for past exams, made by me. Might contain any kind of error.
-* Esercizi/ - exercises handed out by the teacher, divided by category.
-* Laboratorio/ - exercises made during laboratory lessons.
+* exams/ - solutions for past exams, made by me. Might contain any kind of error.
+* exercises/ - exercises handed out by the teacher, divided by category.
+* lab/ - exercises made during laboratory lessons.
 * tips.txt - notes taking during class, compacted in a single file.
 
 ## Contribute
