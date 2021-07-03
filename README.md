@@ -1,7 +1,8 @@
 # Programmazione 1
+
 [![forthebadge](https://forthebadge.com/images/badges/compatibility-emacs.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
 
 ## Introduction
 
@@ -16,14 +17,18 @@ This repo contains material about the following course:
 **University**: Trento
 
 ## Content
+
 You can find the following material in the repo:
+
 * exams/ - solutions for past exams, made by me. Might contain any kind of error.
 * exercises/ - exercises handed out by the teacher, divided by category.
 * lab/ - exercises made during laboratory lessons.
 * tips.txt - notes taking during class, compacted in a single file.
 
 ## Contribute
+
 Feel free to contribute by forking the project and issuing a pull request. Any contribution to the TeX documents are more than welcome.
 
 ## Authors
+
 * **Matteo Franzil** - *Initial work* - [mfranzil](https://github.com/mfranzil)
