@@ -22,6 +22,7 @@ You can find the following material in the repo:
 
 * exams/ - solutions for past exams, made by me. Might contain any kind of error.
 * exercises/ - exercises handed out by the teacher, divided by category.
+* exercises-solutions/ - solutions for the exercises asked in each ESERCIZI_PROPOSTI file.
 * lab/ - exercises made during laboratory lessons.
 * tips.txt - notes taking during class, compacted in a single file.
 
