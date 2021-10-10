@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for i in *.cc
+do
+  echo "compiling "$i
+  g++ $i  ;
+done
+
+# for i in *.cc
+# do
+#   echo "printing "$i
+#   a2ps $i  ;
+# done

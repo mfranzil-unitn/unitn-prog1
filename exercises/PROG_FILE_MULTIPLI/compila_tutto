@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in extern matrix
+do
+echo "compiling "$i.cc $i\_main.cc
+   g++ $i.cc $i\_main.cc -o $i
+done
+
+g++ static.cc

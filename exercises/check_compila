@@ -1,0 +1,12 @@
+#! /bin/bash
+
+
+for i in AGENDA AGENDA_DOPPIA ALLOC_DINAMICA ARRAY ARRAY_PUNT CALC_RPN CALC_STD CODA_PRIORITA ESEMPI_BASE ESEMPI_RAPPR_BINARIA FUNCTIONS FUNZIONI_RICORSIVE IF_THEN_ELSE_SWITCH IO_SU_FILES LOOPS MATRICI PROG_FILE_MULTIPLI RIF_PUNT SORT STACK_QUEUE_ARRAY STACK_QUEUE_PUNT STRINGS STRUCT TREE TREE_ARRAY;
+do
+   pushd $i;
+   echo "********************************************************"
+   echo "**** entering $i                                        *"
+   echo "********************************************************"
+   ./compila_tutto;
+   popd
+done;

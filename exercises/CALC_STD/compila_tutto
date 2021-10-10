@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+  rm a.out calcola;
+  g++ -c entry.cc
+  g++ -c expression.cc 
+  g++ entry.o expression.o main.cc 
+  g++ entry.o expression.o calcola_main.cc -o calcola;

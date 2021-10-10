@@ -1,0 +1,16 @@
+0) si realizzino le funzioni di stampa per queue e stack in modo ricorsivo. 
+per lo stack, si realizzi anche la funzione ricorsiva che stampa in ordine inverso. 
+
+1) Si realizzino con liste concatenate gli esercizi proposti in STACK_QUEUE_ARRAY
+
+2) un messaggio viene rappresentato mediante una struct
+
+struct messaggio {
+   char testo[10000];
+   int priorita;
+}
+
+dove priorita' ha un range crescente da 1 a 10.
+Scrivere una struttura dati "coda a priorita" in cui e' possibile inserire messaggi,
+da cui vengono estratti in modo FIFO per classi di priorita':
+(prima quelli a priorita' 10, poi quelli a priorita' 9,...) 

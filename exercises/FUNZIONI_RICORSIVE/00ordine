@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FUNZIONI RICORSIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+fact_nocomment.cc  fattoriale
+fact.cc            fattoriale, chiamate tracciate
+fact_infloop.cc    fattoriale, errore (loop infinito)
+fact_stack.cc      fattoriale, stack
+pariDispari.cc  // funzioni mutualmente ricorsive
+
+fibonacci_nocomment.cc         fibonacci (comincia ad inchiodarsi intorno a 40)
+fibonacci.cc                   fibonacci, chiamate tracciate
+fibonacci_iterativa.cc         fibonacci, iterativa
+
+
+-- ricorsione con wrapping function
+stampanumeri.cc
+stampanumeri1.cc
+stampanumeri2.cc
+fact_rec1.cc       fattoriale, con wrapping function
+
+tail-recursion vs iterazione
+stampanumeri3.cc         esempio di funzione void tail recursive
+stampanumeri3_while.cc   .. corrispondente versione iterativa
+sum.cc                   esempio di funzione tail recursive
+sum_while.cc             .. corrispondente versione iterativa
+
+espressione.cc           lettura ricorsiva di 
+                         un'espressione aritmetica.
+

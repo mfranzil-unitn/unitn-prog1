@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in stack struct_stack queue struct_queue 
+do
+echo "compiling "$i.cc $i\_main.cc
+   g++ $i.cc $i\_main.cc -o $i
+done
+
+g++ stack.cc reverse_main.cc

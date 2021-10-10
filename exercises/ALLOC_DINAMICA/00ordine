@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ALLOCAZIONE DINAMICA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+*** new e delete su variabili
+
+new1.cc  \
+new2.cc  | diverse sintassi
+new3.cc  /
+newdelete1.cc
+newdelete2.cc
+
+*** allocazione e deallocazione array
+
+prova.cc  
+
+*** allocazione di stringhe 
+prova2.cc  // 
+
+*** allocazione eccessiva
+// apri una shell con top attivo
+prova3.cc       // alloc eccessiva (nota "utilizzo dell'array" 
+                // necessario solo su certe macchine)
+prova3_bis.cc   // con deallocazione
+prova3_tris.cc  // deallocazione non dipende dal nome del puntatore 
+                //  ma dall'indirizzo del primo elemento 
+prova3_err.cc   // delete[] richiede l'indirizzo del primo elemento!
+
+*** uso di set_new_handler
+prova4.cc
+
+*** uso di "new (nothrow)"  (restituisce NULL senza eccezioni)
+prova4_nothrow.cc
+
+***allocazione array con inizializzazione: non piu' ammessa
+prova5.cc
+
+*** restituzione di un array con allocazione dinamica
+
+err_restituzione_array2.cc - versione con array statico: compila, ma fa disastri
+restituzione_array.cc
+
+*** responsabilita' dell'allocazione:
+
+responsabilita1.cc // funzione che legge un'array: OK: allocazione esterna alla funzione, puntatore passato per valore
+responsabilita1_err.cc // funzione che legge un'array: ERR: allocazione interna alla funzione, puntatore passato per valore
+responsabilita2.cc // funzione che legge un'array: OK: allocazione interna alla funzione, puntatore passato per riferimento!
+responsabilita2_memleak.cc // funzione che legge un'array: MEM: allocazione interna alla funzione, puntatore passato per riferimento!
+responsabilita3.cc //deallocazione interna alla funzione print,  passaggio per valore
+responsabilita3_2deall.cc // versione precedente pericolosa!
+responsabilita4.cc // funzione di  deallocazione esplicita
+ 
+
+*** allocazione dinamica di matrici
+
+mostrare matrix_sta.pdf
+
+matrix_sta.cc  // da "MATRICI"
+matrix_din_err.cc // non si puo' allocare direttamente un array 
+                  // multidimensionale dinamico
+
+mostrare matrix_din.pdf
+matrix_din.cc     // alloc. come array dinamico di array dinamici
+
+
+matrix.cc  // 
+matrix_typedef.cc  // stessa cosa, con il nuovo tipo "matrix" (uso di typedef)
+matrix_v2.cc  // come matrix.cc, con unica funzione di allocamento matrice. 
+matrix_v2_typedef.cc  // come sopra, con typedef
+
+// nota: esempi precedenti esplicitamente senza deallocazione
+
+**** allocazione/deallocazione di matrici
+// apri una shell con top attivo
+
+matrix2.cc // allocazione senza deallocazione di matrici
+matrix3.cc // allocazione con parziale deallocazione di matrici
+matrix4.cc // allocazione con deallocazione di matrici
+
+*** incompatibilita' in passaggio di parametri tra array bidimensionali statici e dinamici
+
+matrix_stavsdin.cc
+
+(pura curiosita': matrix_din_partial.cc: array dinamico di array a dim fissa). 

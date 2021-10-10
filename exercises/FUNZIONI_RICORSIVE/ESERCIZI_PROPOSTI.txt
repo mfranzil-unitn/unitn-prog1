@@ -1,0 +1,16 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ESERCIZI PROPOSTI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1) Prendere gli esempi di funzioni ricorsive in questa directory 
+   (tranne "espressione.cc") e farne una versione iterativa.
+
+2) Prendere gli esempi di funzioni iterative viste finora e farne una
+   versione ricorsiva. 
+
+3) per le verie funzioni ricorsive viste, dire se sono tail-recursive
+   o meno.  
+
+4) realizzare una versione tail-recursive della funzione di fibonacci
+  (e' possible usare wrappers)
+

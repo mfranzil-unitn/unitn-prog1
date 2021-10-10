@@ -1,0 +1,43 @@
+
+* scrivere una funzione che prenda come parametri 2 array di double 
+della stessa dimensione e ne calcoli il prodotto scalare. 
+
+* scrivere una procedura che calcoli la norma di un vettore di double
+(la radice quadrata del prodotto scalare con se' stesso).
+
+* scrivere una procedura che normalizzi un vettore, cio'che sostituisca un 
+vettore con quallo risultante dalla divisione di tutti i suoi elementi per 
+la nua norma.
+
+* scrivere una funzione che dica se due vettori della stessa dimensione 
+sono ortogonali (due vettori sono ortogonali se il loro prodotto scalare 
+e' nullo). 
+
+* scrivere una procedura che prenda in ingresso un vettore v e la sua
+  dimensione d, un nuovo elemento x e un indice i, e aggiunga
+  l'elemento x in posizione i nel vettore, e incrementi d di uno.  Il
+  vettore passato deve avere almeno d+1 elementi.
+
+Esempio:
+v = [4 1 3 6 8]
+d = 5
+x = 7
+i = 2
+===>
+v = [4 1 7 3 6 8]
+d = 6
+
+
+* scrivere una procedura che prenda un vettore v e la sua dimensione d,
+un  elemento x, ed elimina tutte le occorrenze di x (diminuemdo la 
+dimensione d del vettore)
+
+Esempio:
+v = [4 1 3 6 8 4 2]
+d = 7
+x = 4
+===>
+v = [1 3 6 8 2]
+d = 5
+
+* scrivere varianti ricorsive delle funzioni qui sopra

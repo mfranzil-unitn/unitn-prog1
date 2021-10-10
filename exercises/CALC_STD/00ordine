@@ -1,0 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CALCOLATRICE STANDARD
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+nota: token separati da blank: "( 4 + a )" e non (4+a)
+
+- entry.cc/.h expression.cc/.h  main.cc ()  // prova
+
+- entry.cc/.h expression.cc/.h  calcola_main.cc // calcolatrice
+

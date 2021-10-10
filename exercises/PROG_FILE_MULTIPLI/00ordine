@@ -1,0 +1,17 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% VISIBILITA' MODULI, FILE MULTIPLI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+- visibilita' e moduli: 
+capitolo 10 slides
+
+static.cc - variabili statiche nel programma
+
+extern, extern_main.cc - uso di extern
+
+-- programmi su piu' files
+matrix_typedef.cc 
+matrix.h/cc/matrix_main.cc
+
+

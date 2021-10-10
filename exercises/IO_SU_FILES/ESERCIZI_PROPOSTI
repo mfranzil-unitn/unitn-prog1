@@ -1,0 +1,10 @@
+1) riscrivere i vari esercizi per stringhe e elaborazione di testo 
+con accesso diretto su file, con nomi di file a command line
+
+2) scrivere dei comandi che riproducano alcuni comandi unix/linux come
+cp, grep, cat. 
+
+3) scrivere un programma che prenda due file
+- uno di testo
+- l'altro con una mappa iniettiva tra caratteri
+  e riscriva su un nuovo file il testo criptato secondo la mappa di caratteri. 

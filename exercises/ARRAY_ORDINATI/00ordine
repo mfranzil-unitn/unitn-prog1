@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SORTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+--- slide p. 164-166
+-- importanza di avere array ordinati
+
+- search
+linear_search.cc: linear search
+binary_search.cc: binary search
+binary_search_rec.cc: binary search, ricorsiva
+
+-- bubblesort semplice
+bubblesort_nocomment.cc
+bubblesort.cc 
+
+-- prova con i due diversi array
+
+-- bubblesort ottimizzato
+bubblesort_opt.cc
+
+-- quicksort
+quicksort_nocomment.cc
+quicksort.cc
+quicksort_rand.cc -- con randomizzazione
+
+-- merging
+- merge.cc
+
+--
+guarda ineffective_sorts.png :-)
+da http://www.xkcd.com/1185/
+

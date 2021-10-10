@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PUNTATORI ED ARRAY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+capitolo 6 slides
+
+
+*** ARITMETICA DEI PUNTATORI.
+
+aritmetica_punt.cc
+
+*** puntatori e vettori
+
+punt_vett.cc     &v[i] = v+i, v[i] = *(v+i)
+punt_vett1.cc    idem, con doppio avanzamento
+priorita.cc      *pv+1 e' (*pv)+1, non *(pv+1)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARRAY E PUNTATORI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+scansione_array.cc ; scansione array con puntatori
+scansione_array2.cc       "      "    "    "
+
+INDIRIZZI DEGLI ARRAY
+address_2.cc array di interi
+address_3.cc array di long double
+
+------------ fin qui niente funzioni ----------------
+
+** passare array a funzioni come puntatori
+concatena_array.cc      array 
+concatena_array1.cc     passati come puntatori 
+concatena_array2.cc     passati e manipolati come puntatori 
+concatena_array3.cc     par. attuale puntatore, par. formale array
+
+
+** restituzione array
+
+restituzione_array.cc;      - corretta, restituisce array parametro formale
+restituzione_array.cc;      - corretta, restituisce array globale
+err_restituzione_array.cc;  - errore in compilazione
+err_restituzione_array1.cc; - errore in compilazione
+err_restituzione_array2.cc; - compila, ma fa disastri
+
+
+
+
+ESERCIZI_PROPOSTI

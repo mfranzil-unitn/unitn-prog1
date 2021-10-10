@@ -1,0 +1,4 @@
+0) si realizzino le funzioni di stampa per queue e stack in modo ricorsivo. 
+per lo stack, si realizzi anche la funzione ricorsiva che stampa in ordine inverso. 
+
+1) Si realizzino con liste concatenate gli esercizi proposti in STACK_QUEUE_ARRAY

@@ -1,0 +1,35 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ESERCIZI PROPOSTI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1) Riscrivere gli esempi della directory "LOOPS" come funzioni.
+
+2) reimplementare l'esempio della serie sum 1/(2^i) 
+implementando esplicitamente la funzione 
+double pow2(int) 
+che calcola 2^i (2*2*2*2.....*2) 
+
+3) Scrivere una funzione f:R-->R che restituisca:
+-x^3 se x<=0
+e^x-1 se x>0
+e scrivere un programma main che calcoli la funzione f nei punti
+-10,-9,...,-1,0,1,2,...,9,10
+
+4) scrivere una procedura che ruoti tre elementi a,b,c
+e si scriva un main di prova.
+es:
+a=1;
+b=2;
+c=3;
+ruota(a,b,c); // a=2;b=3;c=1;
+
+5) scrivere una PROCEDURA (void) che calcoli l'area 
+del cerchio dato il raggio. 
+
+6) scrivere una funzione (int) che calcoli sia l'area del cerchio 
+sia il suo perimetro e che la restituisca tramite la lista dei parametri,
+e che restituisca un valore booleano 1 se ha potuto calcolarlo (raggio >=0),
+0 altrimenti. 
+
+7) scrivere un programmino che simuli un attacco 3 contro 3 
+a RISIKO

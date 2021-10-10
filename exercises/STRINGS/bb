@@ -1,0 +1,5 @@
+#! /bin/sh
+for i in *.cc; do 
+  echo compiling $i ...
+  cp  $i~ $i 
+done

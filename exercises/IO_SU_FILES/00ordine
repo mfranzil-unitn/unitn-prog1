@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% IO su files 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cap 07 slides
+
+-- usa in1 e in1.bis 
+converti.cc : converte file dati in euro in file dati in lire
+
+
+  // NOTA: "!myin.eof" va usato sempre *DOPO* almeno un'operazione di lettura
+  // Inoltre richiede sempre un separatore dopo l'ultimo elemento letto
+  // altrimenti meglio usare !myin.fail()
+
+-- usa in1  e in1.bis
+converti1.cc : come sopra, con !myin.fail() 
+ 
+converti2.cc : come sopra, con cin loop 
+copiafile.cc: effettua una copia di un file 
+appendifile.cc: appende un file ad un altro file
+
+ESERCIZI_PROPOSTI.txt

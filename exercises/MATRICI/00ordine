@@ -1,0 +1,20 @@
+Slides 6
+
+gv matrix_sta.ps   (struttura di una matrice statica)
+matrix_sta.CC
+
+def_mat.cc    basics
+def_mat_1.cc  inizializzazione
+def_mat_2.cc  inizializzazione parziale
+def_mat_3.cc  inizializzazione parziale
+def_mat_4.cc  inizializzazione: no need for first value
+def_mat_5.cc  inizializzazione: errore
+
+matrix1.cc   dimensioni fisse
+
+matrix2.cc   dimensione fissa, utilizzate in parte (ddd)
+
+matrix3.cc   solo una dimensione fissa, utilizzate in parte
+matrix3_err.cc  (e' necessario passare la dimensione)
+
+

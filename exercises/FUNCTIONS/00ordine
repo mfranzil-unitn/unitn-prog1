@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FUNCTIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+----------- capitolo 5 
+
+uso di funzioni di libreria
+chiamata di funzione
+discorso del  trasferimento del controllo 
+
+tavola_logaritmi.cc
+
+------------------------------------
+definizione di funzioni, pass. parametri valore
+
+NOTA: distingui definizione e chiamata,
+
+mcd.cc    -- esempio delle dispense
+
+-- void 
+printdate.cc ; es di void
+printchartype.cc ; es di void
+
+scope.cc    ; scope 
+
+mylog10_err.cc -- precisione su float
+mylog10.cc
+
+fact.cc   -- funzione fattoriale
+fact1.cc  -- funzione fattoriale, con dichiarazione (header)
+fact2.cc  -- identificatore "fattoriale" locale e globale
+fact3.cc  -- parametro formale stesso nome di par. valore
+
+isprime.cc ; es di Boolean
+tiradadi.cc  ; random numbers
+
+comb.cc   -- funzioni che chiamano funzioni [D]
+comb2.cc  -- con dichiarazioni (headers)
+comb2_track.cc -- tracciando gli indirizzi (stack)
+
+mymax.cc        -- min, max, chiamate annidate [D]
+mymax_track.cc  -- tracciando gli indirizzi (stack)
+
+
+
+
+--------------------------------------
+passaggio parametri per riferimento
+ruolo di output del passaggio per rif.
+
+scambia_err.cc ; riferimento, errato
+scambia.cc ; riferimento            [D]
+
+riferimento_err.cc ; passaggio per riferimento non ammesso, tipo diverso
+
+mcd_err.cc ; problemi ad usare il riferimento quando non dovuto
+
+rectpolar.cc   ; restituzione di due valori 
+
+iva.cc  ; parametro come inpue e output della funzione 
+
+usa_const.cc ; uso di riferimento const 
+
+cipeciop.cc ; esempi per riferimento
+pippo.cc    ; esempi per riferimento
+paperino.cc ; esempi per riferimento
+topolino.cc ; esempi per riferimento
+
+******** SOLO SE FAI PRIMA I PUNTATORI ******** 
+
+** passaggio parametri per puntatore
+sezione 9, pagina 150 slides
+
+scambia_punt.cc
+
+iva2.cc passaggio per puntatore
+
+paperino.cc   passaggio per riferimento
+paperino2.cc  passaggio per puntatore
+
+
+** restituzione di un riferimento 
+
+restituzione_riferimento.cc
+
+** solo se hai gia' fatto gli array:
+restituzione_riferimento_array.cc
+
+-----------overloading e argomenti di default
+
+overloading.cc   ; sovrapposizione        [D]
+defaultvalues.cc   ; argomenti di default
+
+
+ESERCIZI PROPOSTI

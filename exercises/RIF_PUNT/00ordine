@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% puntatori e riferimenti
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+------< sezione 4 slides >
+
+** references 
+nota: riferimento a espressione senza l-value o a tipo 
+diverso non piu' ammesso dallo standard C++
+
+reference.cc
+
+** operatore address-of 
+
+address_1.cc valori di interi
+
+
+** references e address-off
+
+rifVsAddressof.cc
+
+** puntatori *****************************
+
+pointer.cc
+pointer1.cc
+pointer2.cc
+pointer3.cc 
+
+rif_deref.cc reference to an object pointed by a pointer:
+             un riferimento non "segue il puntatore"
+rifpunt.cc [DDD]
+
+punt-a_void.cc // puntatori a void (cenni)
+
+** puntatori a costanti e costanti puntatori  
+punt_a_cost.cc       puntatori a costanti
+const_punt.cc        costanti puntatori
+const_punt_const.cc  costante puntatore a costante
+

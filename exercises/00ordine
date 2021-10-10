@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%STACK E CODE REALIZZATE TRAMITE LISTE CONCATENATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+stack.h/cc, stack_main.cc
+- semplice stack globale, 
+
+stack.h/cc, reverse_main.cc
+  uso di stack per invertire l'ordine
+
+struct_stack.h/cc, struct_stack_main.cc
+- semplice stack come struct
+
+queue.h/cc, queue_main.cc
+  semplice coda globale
+
+struct_queue.h/cc, struct_queue_main.cc
+- semplice coda come struct
+ 
+

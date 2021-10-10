@@ -1,0 +1,4 @@
+
+1) definire una variante della funzione "ricerca" che restituisca una
+lista di TUTTI gli elementi che contengono il campo informativo
+richiesto. (Es. tutti gli utenti di nome "Tomasi")

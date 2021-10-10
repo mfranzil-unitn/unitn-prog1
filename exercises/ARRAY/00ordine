@@ -1,0 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARRAY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+array.cc   : operazioni non lecite su arrays
+
+array1.cc  : lettura di un valore, stampa in ordine inverso
+             fai notare che gli array contano da 0!
+array2.cc  : lettura di un valore, stampa in ordine inverso ,
+             con dimensione const, 1..4
+array2_mia.cc  : lettura di un valore, stampa in ordine inverso
+             range 0..dim-1
+array2_errata.cc  : lettura di un valore, stampa in ordine inverso
+             casino sul range (problema tipico)
+
+--- inizializzazione di vettori ---
+
+array3.cc     ; inizializzazione
+array3_err.cc ; array range starts from 0!
+array3_bis.cc ; inizializzazione senza esplicitazione della dim.
+array4.cc ; inizializzazione a zero di default
+array4_bis.cc ; inizializzazione a tutti zero di default
+array5.cc ; vettore non inizializzato
+
+NOTA: compilare con -fno-stack-protector per avere un comportamento "diretto" dello stack. Disabilita buffer-overflow-protection di Gcc su Ubuntu 
+http://en.wikipedia.org/wiki/Buffer_overflow_protection#GCC_Stack-Smashing_Protector_.28ProPolice.29
+
+array3_errato.cc  : errore, fuori range: 
+                    catastrofico: va a sovrascrivere su una variablie 
+                    ma non rivelato!
+
+--- passaggio di vettori -----------
+
+leggistampaarray.cc ; passaggio di vettori, i/o di vettori
+leggietampaarray_const.cc  ; passaggio di vettori, i/o di vettori 
+leggimanipolaarray.cc passaggio di vettori, i/o di vettori, manipolazione di vettori
+
+somma_array.cc
+concatena_array.cc
+
+
+FARE QUI O IN FUNZIONI RICORSIVE A SECONDA SE HAI DECISO DI FARE PRIMA ARRAY
+ O FUNZIONI RICORSIVE
+
+array_rec1_nocomment.cc  somma di array 1 
+array_rec1.cc            somma di array 1, chiamate tracciate
+array_rec2_nocomment.cc  somma di array 2 
+array_rec2.cc            somma di array 2, chiamate tracciate
+array_rec3_nocomment.cc  somma di array 3 
+array_rec3.cc            somma di array 3, chiamate tracciate

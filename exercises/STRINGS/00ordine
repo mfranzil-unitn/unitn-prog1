@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% STRINGHE C
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+cap 7 slides
+
+strings2.cc  "ABCD = ['A' 'B' 'C' 'D' \NUL]
+
+file "input"
+operatori < >
+^D e' EOF
+
+strings3.cc  input/output di stringhe 
+strings3_cinloop.cc  variante, con cin-loop 
+
+
+--- con input da file --- usa in1 e in1.bis
+
+converti.cc: uso di cin.eof()  -- 
+converti1.cc: uso di cin.fail()  -- 
+converti2.cc: uso di cin.fail() e cin.clear() -- 
+
+--- con input da file --- usa "< in"
+
+strings4_while.cc  //uso di cin.getline(char *, int) 
+                   //(restituisce empty stream se c=eof)
+
+strings6.cc  uso di cin.get(char *) //(restituisce 0 se c=eof)
+strings7.cc  uso di cin.put(char *)
+
+
+**** matrici di caratteri e array di stringhe: 
+
+strings12.cc : inizializzazione di array di stringhe // ora deprecato
+strings12_bis.cc : differenza tra array di stringhe e matrice di caratteri
+
+
+**** OPERATORI SU STRINGHE
+ 
+strings13.cc : strlen()
+strings14.cc : strchr, strrchr, strstr 
+(ricerca di caratteri e stringhe in una stringa)
+strings15.cc : strcpy    (DDD)
+strings16.cc : strncpy
+strings17.cc : strcat  ; attenzione, c'e' un errore
+strings17_correct.cc
+strings17_catastrophic.cc   (DDD)
+strings18.cc : strncat  // attenzione: 
+                     // a seconda di opzioni di compilazione, puo' dare errore
+strings19.cc : strcmp 
+
+**** USO DI ARGC E ARGV
+
+argcargv.cc
+iva1.cc

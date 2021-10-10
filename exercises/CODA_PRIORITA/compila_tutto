@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+  rm prio_queue;
+  g++ message.cc  prio_queue.cc  struct_queue.cc prio_queue_main.cc  -o prio_queue

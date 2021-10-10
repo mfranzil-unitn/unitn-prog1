@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ESERCIZI PROPOSTI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1) Scrivere un programma che risolva un'equazione di 2 grado
+nei reali
+
+2) Scrivere un programma che risolva un'equazione di 2 grado,
+dando anche le soluzioni complesse
+
+3) Scriver un programmino che chieda una carattere descrivente una lingua 
+(es: 'i'= italiano, 'e'=inglese, ecc.) e scriva "buon giorno" 
+nella lingua prescelta. Usare l'istruzione switch. 
+
+4) Scrivere un programma che "indovini" un numero tra 0 e 7
+facendo una serie di domande del tipo "s/n" all'utente. 
+
+ 
+

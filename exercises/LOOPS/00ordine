@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% LOOPS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+---- while -------------------------------------
+
+stampaciao.cc
+stampaciao2.cc        -- ripetizione pedissequa di un'operazione
+
+stampaciao_infloop.cc -- loop infinito
+
+sommainteri_while.cc -- somma con accumulatore
+divisibile.cc        -- condizione di uscita =/= conteggio
+
+conversione3_while.cc -- ripetizione di comando a menu 
+
+fact_while.cc        -- prodotto con accumulatore 
+
+serie_while.cc       -- somma con accumulatore (conteggio) 
+serie_while1_err.cc  -- somma con accumulatore (cond. uscita) 
+                        nota: err, divide per 0
+serie_while1.cc      -- somma con accumulatore (cond. uscita) corretta (sol. 1)
+serie_while2.cc      -- somma con accumulatore (cond. uscita) corretta (sol. 2)
+
+cin_loop.cc          --- cin loop 
+              (vedi ad es http://www.fredosaurus.com/notes-cpp/io/cinloop.html)
+                     introduci ridirezione da file "<" se non l'hai gia' fatto
+cin_loop_equivalent.cc  --- stessa cosa, ma con fail
+                                  
+
+---- do while -------------------------------------
+
+sommainteri_do.cc    -- somma con accumulatore (do)
+
+conversione3_do.cc   -- ripetizione di comando a menu (do)
+
+base.cc
+
+---- for -------------------------------------
+
+fact_for.cc          -- prodotto con accumulatore (for)
+
+serie_for.cc         -- somma con accumulatore (conteggio) (for) 
+serie_for1.cc         -- somma con accumulatore (cond. uscita) (for) corretta
+
+doublefor.cc         -- for annidati
+
+-- inizializzazioni, condizioni e incrementi multipli -------
+
+tuttiiloop.cc        -- while: scelta, 
+                        for: enumerazione numeri, 
+                        do: ripet. input
+
+serie_for1_2init.cc  -- condizione iniziale multipla con for
+serie_for1_2init2.cc -- cond. iniziale multipla &
+                        uscita multipla con for
+minmax.cc            -- incremento come input dato dall'utente
+
+doublecontrol.cc     -- doppio incremento
+
+---- break, continue e return in a loop ------------------------------------
+
+break_while.cc       -- semplice break (while)
+nobreak_while.cc     -- come evitare un break  (while)
+
+return_while.cc       -- semplice return (while)
+noreturn_while.cc     -- come evitare un return  (while)
+
+continue.cc          -- semplice continue (while)
+nocontinue.cc        -- come evitare continue (while)
+
+
+
+ESERCIZI PROPOSTI

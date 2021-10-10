@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ESEMPI BASE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <capitolo 1 handouts>
+
+SVILUPPO DI UN PROGRAMMA:
+- esempio fattoriale da dispense (esempio di com'e' fatto un programma)
+esempio_fattoriale.cc 
+esempio_fattoriale2.cc fact.cc compilazione separata
+
+OUTPUT
+- Output elementare di stringhe. 
+template.cc
+ciao.cc   //con "\n"
+ciao2.cc  //con "endl"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <capitolo 1 handouts>
+
+<sequenze di escape> escape.cc
+<rappresentazione numeri> rappr_numeri.cc
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <capitolo 2 handouts>
+<variabili> 
+variabili.cc
+
+variabili2.cc // con inizializzazione
+-- da notare: global 0-initialized, local nessun vincolo
+-- alcune macchine/compilatori 0-inizializzano var locali (pericolo!)
+
+COSTANTI
+costanti.cc
+-- da notare: e' possibile inizializzare costanti a valore non costanti, 
+   ma il risultato e' imprevedibile e varia a seconda delle 
+   macchine/compilatori
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <capitolo 2 handouts>
+
+<stream>
+<stream predefiniti>
+
+<stream di uscita>
+<esempio di scrittura> esempio_cout.cc 
+<esempio di scrittura multipla> esempio_cout_multiplo.cc 
+
+- Input elementare. concetto di variabile. 
+
+<lettura di carattere> lettura_carattere.cc
+<lettura di intero> lettura_numero.cc
+
+
+esempio_cin.cc  \ input multiplo
+esempio_cin2.cc | 
+esempio_cin3.cc / prova a inserire > 33.4 ==> 3 3 0.4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <capitolo 2 handouts>
+
+Codifiche:
+../ESEMPI_BASE/rappresentazione_binaria.txt
+
+TIPI
+shortlong.cc
+unsigned.cc
+
+<operatori aritmetici> operatori_aritmetici.cc
+<operatori bitwise> operatori_bitwise.cc
+// da notare: l'operatore "~" restituisce un intero signed anche 
+// se l'input e' unsigned
+// ==> necessario un casting
+
+Assegnazione:
+assegnazione_errori.cc // errori
+assegnazione.cc
+op_assegnazione.cc
+op_incremento.cc
+
+booleani:
+booleano.cc       // come interi
+booleano_bool.cc  // come bool
+booleano_sideeffects.cc // booleano con side effects: lazy evaluation di &&
+
+reali:
+reali.cc
+reali_vs_interi.cc
+
+enum:
+enum.cc
+
+char
+char.cc
+
+- l'operatore sizeof:
+sizeof.cc
+sizeof2.cc
+
+conversioni implicite:
+conversioni_err.cc
+conversioni_corr.cc

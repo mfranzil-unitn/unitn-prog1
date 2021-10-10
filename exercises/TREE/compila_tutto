@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ tree.cc tree_main.cc;
+g++ tree1.cc tree1_main.cc;

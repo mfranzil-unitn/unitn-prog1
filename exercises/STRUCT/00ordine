@@ -1,0 +1,33 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% STRUCT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Capitolo 09
+
+struct.cc       // operazioni di base struct (DDD)
+struct1.cc      // operazioni di base struct, con inizializzazione
+struct2.cc      // con assegnazione di struct 
+struct3.cc      // con assegnazione e passaggio di struct 
+
+struct_array.cc     // array inviluppati come struct  (DDD)
+struct_array1.cc     // come sopra ,con inizializzazione
+struct_arraypunt.cc // attenzione: come prima ma con i puntatori: copia
+                       il puntatore, non l'intero array!  (DDD)
+
+
+-------------- strutture ricorsive
+rec_struct_err.cc // strutt ricorsiva, non corretta 
+rec_struct.cc     // strutt ricorsiva, corretta
+mutrec_struct_err.cc // strutt mutualmente ricorsive, non corrette
+mutrec_struct.cc     // strutt mutualmente ricorsive, corrette
+
+---------------- array ordinati di struct -------------
+
+persone.cc      // array ordinato di struct, sort, ricerca binaria.
+                   swap fa copie!
+
+persone2.cc      // array ordinato di puntatori a struct, sort, ricerca binaria.
+                    swap scambia puntatori!
+
+// ALLOCAZIONE DINAMICA
+persone3.cc      // doppio array ordinato di puntatori a struct, sort, 
+                    ricerca binaria con chiavi multiple.
