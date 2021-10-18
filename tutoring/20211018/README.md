@@ -27,7 +27,7 @@ La matrice per ora può essere dichiarata come una variabile globale.
 
 ## Esercizio 4 (gennaio 2016)
 
-> Il seguente è un codice - letterale - preso dal primo appello del 2016.
+>Il seguente è un codice - letterale - preso dal primo appello del 2016.
 
 Completare il programma contenuto nel file esercizio2.cc implementando la funzione ricorsiva:
 

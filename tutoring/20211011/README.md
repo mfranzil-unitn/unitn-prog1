@@ -1,5 +1,9 @@
 # 20211011
 
+## Esercizio 1
+
+Segnarsi la mail dei tutor: `<tutorprogrammazione1disi [at] unitn [dot] it>`
+
 ## Esercizio 2
 
 Reimplementare l'esempio della serie sum 1/(2^i) implementando esplicitamente la funzione `double pow2(int)`  che calcola 2^i (2*2*2*2.....*2) .
@@ -15,7 +19,7 @@ Scrivere una funzione f:R-->R che restituisca:
 
 Inoltre scrivere un programma main che, dato un numero in input (e.g. -10), calcoli la funzione f nei dieci punti successivi: `-10,-9,...,-1,0`
 
-## Esercizio 8
+## Esercizio 7
 
 Scrivere un programma che prenda in input due numeri interi e:
 
@@ -42,12 +46,8 @@ Scrivere una PROCEDURA (`void`) che calcoli l'area del cerchio dato il raggio.
 
 ### Esercizio 6
 
-Scrivere una funzione (`int`) che calcoli sia l'area del cerchio sia il suo perimetro e che la restituisca tramite la lista dei parametri, e che restituisca un valore booleano 1 se ha potuto calcolarlo (raggio `>=0`), 0 altrimenti.  
-
-### Esercizio 7
-
 Scrivere un programmino che simuli un attacco 3 contro 3 a RISIKO. Tirare 3 dadi a 6 facce per l’attaccante e 3 per il difensore. Confrontare il dado più alto dell’attaccante contro il più alto del difensore, il medio dell’attaccante contro il medio del difensore e il più basso dell’attaccante contro il più basso del difensore. Dichiarare infine gli scontri vinti dall’attaccante e dal difensore.
 
-### Esercizio 7.1 (propedeutico)
+### Esercizio 6.1 (propedeutico)
 
 Dati in input tre interi positivi in tre variabili (`n1`, `n2`, `n3`), scrivere un programma che con una procedura “ri-ordini” i numeri in ordine crescente usando il passaggio di parametri per riferimento.
