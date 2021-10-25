@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <cstring>
 
 using namespace std;
 
@@ -14,7 +14,8 @@ int main(int argc, char *argv[]) {
     cout << "Introdurre stringa da invertire: ";
     cin >> input;
 
-    // Assumiamo che sia sempre strlen(input) < DIMMAX reverse_array(input, strlen(input));
+    // Assumiamo che sia sempre strlen(input) < DIMMAX
+    reverse_array(input, strlen(input));
     cout << "Array invertito: " << input << endl;
     
     return 0;

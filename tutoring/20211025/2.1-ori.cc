@@ -6,7 +6,7 @@ void memorizza_array(int[], int);
 // INSERIRE QUI LA DICHIARAZIONE DELLA FUNZIONE SEARCH
 
 int main() {
-    int target, found, loc, dim;
+    int target, found, dim;
     int array[100];
     char risp;
 

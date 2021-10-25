@@ -1,6 +1,0 @@
-#!/bin/bash
-
-
-  rm a.out;
-  g++ persona.cc  tree.cc doubletree.cc main.cc  ;
-
