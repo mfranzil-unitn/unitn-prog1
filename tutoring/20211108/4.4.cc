@@ -69,4 +69,12 @@ int main(){
         cout << "max row " << i+1 << " => " << max(matrix[i], col) << endl;
     }
     
+
+    for(int i = 0; i < row; i++){
+        delete[] matrix[i];
+    }
+
+    delete[] matrix;
+
+    return 0;
 }
