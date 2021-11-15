@@ -2,16 +2,12 @@
 
 ## Esercizio 1 Count letter
 
-Dato un file di testo chiamato `text.txt` scrivere un programma che prenda in ingresso una lettera minuscola o maiuscola 
-e mostri a schermo quante volte essa appare all'interno del file di testo. Se il file di testo non esiste il programma
-deve ritornare `-1` 
+Dato un file di testo chiamato `text.txt` scrivere un programma che prenda in ingresso una lettera minuscola o maiuscola e mostri a schermo quante volte essa appare all'interno del file di testo. Se il file di testo non esiste il programma deve ritornare `-1`. 
 
 ## Esercizio 2 Lowercase filter
 
-Scrivere un programma che prenda dalla linea di comando due file di testo, e vada a scrivere nel secondo tutte le lettere 
-minuscole presenti nel primo. Il programma deve ritornare un messaggio di errore nei casi in cui il file di input non esista
+Scrivere un programma che prenda dalla linea di comando due file di testo, e vada a scrivere nel secondo tutte le lettere minuscole presenti nel primo. Il programma deve ritornare un messaggio di errore nei casi in cui il file di input non esista
 e il caso nel quale non vengano passati parametri sufficienti al programma
-
 
 ## Esercizio 3 (Upper/lower)case switch
 
