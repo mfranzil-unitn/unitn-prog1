@@ -18,13 +18,11 @@ int main() {
 
   somma_incrociata(risultato, primo, secondo, 10);
 
-  cout << "Le somme incrociate dei due array sono " << stampa_array(risultato, 10) << endl;
+  cout << "Le somme incrociate dei due array sono: ";
+  stampa_array(risultato, 10);
+  cout << endl;
 
   return 0;
 }
 
 // Inserire qui le DEFINIZIONI delle funzioni
-
-
-
-
