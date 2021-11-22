@@ -53,7 +53,6 @@ exit(EXIT_MESSAGE):	immediately terminates the program;
 setw(int):		sets standard tabulation between outputs
 setprecision(int):	number of digits after the dot on a float
 
-
 <fstream>
 streamname.open(filename,mode(ios::in, ios::out, ios::out|ios::app): stream opening
 streamname >> in;
@@ -89,31 +88,33 @@ int = rand() % z
 
 Tipi di dati astratti:
 Stack:
-	init e print sono void, mentre push, top, pop retval
+	init, print -> void
+	push, top, pop -> retval
 
 	nel caso di array:
 	l'indice tiene conto dell'andamento
 	grandezza dello stack pari a dim
 	servono sia emptyp che fullp (quando i = 0 o dim)
+
 	init		setta l'indice a 0
-	top		passa per riferimento l'elemento i-1
+	top			passa per riferimento l'elemento i-1
 	push		setta elem[n] e incrementa n
-	pop		diminuisce n
+	pop			diminuisce n
 
 
 	nel caso di puntatori:
 	serve solo emptyp (s == NULL)
+
 	init		setta s = NULL
-	top		passa per riferimento s->value
-	pop		crea un nuovo nodo* = s;
+	top			passa per riferimento s->value
+	pop			crea un nuovo nodo* = s;
 				s punta a s->next e nodo* viene cancellato
 	push		crea un nodo* che riceve il valore passato
 				nodo*->next punta a s e s punta a nodo
 
-
-
 Queue:
-	init e print sono void, enqueue, deuqueue e first retval
+	init, print -> void
+	enqueue, deuqueue, first -> retval
 
 	nel caso di array:
 
@@ -138,6 +139,8 @@ Queue:
 	dequeue crea un nodo* temporaneo = h, h = n->next, e il 
 			nodo viene dallocato
 	first	restituisce h->next
+
+	
 
 Tree:
 	nel caso di puntatori:

@@ -56,7 +56,7 @@ Esempio di testo:
 > di G. Rodari.
 
 Esempio di testocorretto corrispondente:
-> Filastrocca delle parole:
+> Filastrocca delle parole:\
 > Fatevi avanti! Chi ne vuole?\
 > Di parole ho la testa piena,\
 > con dentro la “luna” e la “balena”.\
