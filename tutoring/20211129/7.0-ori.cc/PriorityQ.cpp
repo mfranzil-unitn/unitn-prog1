@@ -12,7 +12,7 @@ struct fake_pair{
 };
 
 priorityQueue *init(int dim) {
-    auto *pq = new priorityQueue;
+    priorityQueue *pq = new priorityQueue;
     pq->queue = new node *[dim];
     for (int i = 0; i < dim; i++) {
         pq->queue[i] = nullptr;
@@ -59,7 +59,7 @@ fake_pair find_priority_not_empty(priorityQueue &pq) {
 
 int dequeue(priorityQueue &pq) {
     int retval = -1;
-    auto res = find_priority_not_empty(pq);
+    fake_pair res = find_priority_not_empty(pq);
     node *curr_node = res.first;
     int p = res.second;
     node *temp;
