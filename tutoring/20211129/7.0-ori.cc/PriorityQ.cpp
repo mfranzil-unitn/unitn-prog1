@@ -23,7 +23,7 @@ priorityQueue *init(int dim) {
 
 
 void enqueue(priorityQueue &pq, int value, int priority) {
-    if(priority >= pq.dim){
+    if(priority >= pq.dim && priority < 0){
         cout << "No priority " << priority << " exists" << endl;
     } else {
         if (pq.queue[priority] == nullptr) {
