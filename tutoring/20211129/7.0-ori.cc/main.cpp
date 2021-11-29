@@ -26,7 +26,7 @@ int main() {
             case 'e':{
                 cout << "Value: ";
                 cin >> value;
-                cout << "\nPriority: ";
+                cout << "Priority: ";
                 cin >> priority;
                 cout << endl;
                 enqueue(*pq, value, priority);
