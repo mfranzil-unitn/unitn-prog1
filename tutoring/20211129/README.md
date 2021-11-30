@@ -13,8 +13,9 @@ Per semplificare l'esercizio, la priority Queue è definita come una struttura c
 Ciascuna coda deve essere implementata con una lista doppiamente linkata, quindi ogni nodo avrà due puntatori, uno per il successore ed uno per il predecessore
 
 NOTE:
- - Quando si cerca di estrarre un elemento da una coda vuota dovrà essere restituito il valore `-1`
- - Fare attenzione a come viene deallocata la memoria!
+
+- Quando si cerca di estrarre un elemento da una coda vuota dovrà essere restituito il valore `-1`
+- Fare attenzione a come viene deallocata la memoria!
 
 ## Esercizio 1 (originale; simil esercizio-3 d'esame)
 
@@ -43,7 +44,7 @@ Ovviamente, per imparare il metodo è necessario seguire un seminario tenuto nie
 
 Data l'esclusività del metodo, per partecipare bisogna essere invitati: compreso Fuffox, ogni persona può invitare
 al massimo 3 persone, che a loro volta possono invitare al massimo 3 persone, e così via.
-Questa organizzazione gerarchica è rappresentata dalla struttura `piramide` definita nel file `7.2-ori.cc`, 
+Questa organizzazione gerarchica è rappresentata dalla struttura `piramide` definita nel file `7.2-ori.cc`,
 composta da persone aventi un codice d'invito e un numero variabile (fino a 3) di persone invitate. Al vertice della piramide sta ovviamente Fuffox.
 
 L'ing. Fuffox vuole anche capire quanto facilmente si diffondano gli inviti per il suo seminario. Scrivere la funzione ricorsiva `altezzaPiramide`
@@ -51,7 +52,7 @@ che restituisca l'altezza della piramide, definita come il numero massimo di per
 partendo da Fuffox (compreso) fino alla persona più in fondo alla piramide.
 
 Scrivere la funzione ricorsiva `calcolaGuadagno` che permetta all'ing. Fuffox di scoprire quanto potrà guadagnare da questo seminario.
-Per partecipare infatti è necessario versare una `quota` di partecipazione alla persona che ti ha invitato. 
+Per partecipare infatti è necessario versare una `quota` di partecipazione alla persona che ti ha invitato.
 Chi riceve delle quote d'invito può tenerne soltanto una percentuale definita dalle `commissioni` (ricavoPersonale = commissioni * quoteInvito).
 I soldi rimanenti quindi devono essere mandati alla persona di livello superiore (in aggiunta alla quota personale).
 

@@ -42,7 +42,7 @@ ruota(a,b,c); // a=2;b=3;c=1;
 
 ### Esercizio 5
 
-Scrivere una PROCEDURA (`void`) che calcoli l'area del cerchio dato il raggio. 
+Scrivere una PROCEDURA (`void`) che calcoli l'area del cerchio dato il raggio.
 
 ### Esercizio 6
 

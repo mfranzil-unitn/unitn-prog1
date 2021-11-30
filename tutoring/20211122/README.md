@@ -27,6 +27,7 @@ Trasformare il codice dell'Esercizio 1 in modo che non serva istanziare l'array 
 ## Esercizio 3 (Febbraio 2016)
 
 Scrivere un programma, nel file esercizio1.cc, che, presi come argomenti del main i nomi di due file, copi il primo file nel secondo correggendone la sintassi e generando in tal modo un testo “corretto” secondo le seguenti regole:
+
 1. la prima parola del testo deve iniziare con una lettera maiuscola;
 2. tutte le parole che seguono i seguenti caratteri: “.”, “?” e “!”, devono iniziare con una lettera maiuscola.
 

@@ -2,7 +2,7 @@
 
 ## Esercizio 1 Count letter
 
-Dato un file di testo chiamato `text.txt` scrivere un programma che prenda in ingresso una lettera minuscola o maiuscola e mostri a schermo quante volte essa appare all'interno del file di testo. Se il file di testo non esiste il programma deve ritornare `-1`. 
+Dato un file di testo chiamato `text.txt` scrivere un programma che prenda in ingresso una lettera minuscola o maiuscola e mostri a schermo quante volte essa appare all'interno del file di testo. Se il file di testo non esiste il programma deve ritornare `-1`.
 
 ## Esercizio 2 Lowercase filter
 
@@ -19,7 +19,7 @@ essere maiuscola nel secondo e viceversa.
 Scrivere un programma che chieda all'utente le dimensioni di una matrice di interi, e prenda i valori sempre da terminale.
 Una volta inserita la matrice a schermo deve essere mostrato l'elemento dal valore massimo per ciascuna riga.
 
-```shell 
+```shell
 Number of rows: 3
 Number of cols: 3
 Insert values: 

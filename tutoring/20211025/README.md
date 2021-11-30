@@ -46,7 +46,7 @@ Definizioni:
 
 Esempio di esecuzione:
 
-```
+```plaintext
 Immetti un'altra frase che ritieni palindroma: E d'Irene se ne ride!
 La frase "E d'Irene se ne ride!" è palindroma
 Immetti un'altra frase che ritieni palindroma: Programmazione
