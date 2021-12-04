@@ -22,14 +22,14 @@ Definizioni:
 NOTE:
  - il main del programma può essere modificato per testare il set prima di utilizzarlo nella ricerca delle dipendenze di un nodo all'interno del grafo
  - il file `Graph.h` non può essere modificato
- - per comodità è ammesso l'uso della struttura dati `stack` fornita dalle libreria di sistema (Per avere uno stack di variabili int usare __stack<int> nome;__) [spolier: servirà nella visita del grafo]
+ - per comodità è ammesso l'uso della struttura dati `stack` fornita dalle libreria di sistema (Per avere uno stack di variabili int usare `stack<int> nome;`) [spoiler: servirà nella visita del grafo]
  - i nodi e gli archi del grafo devono essere letti da un  file di testo come quello fornito (`graph1.txt`) dove la prima riga contiene il numero di nodi del grafo, e le righe successive gli archi, ad esempio `0 1` indica un arco `0 -> 1` (Essendo il grafo diretto 0 -> 1 non implica l'esistenza dell'arco 1 -> 0)
- - Esempio di Dipendenza(Il grafo è quello descritto in `graph1.txt`): 
-  -- Nodo 0 -> [1, 2, 3, 4, 5]
-  -- Nodo 1 -> [2, 4, 5]
-  -- Nodo 2 ->  []
-  -- Nodo 3 -> [0, 1, 2, 4, 5]
-  -- Nodo 4 -> []
-  -- Nodo 5 -> [4]
+ - Esempi di dipendenza (Il grafo di riferimento è quello descritto in `graph1.txt`): 
+  - Nodo 0 -> [1, 2, 3, 4, 5]
+  - Nodo 1 -> [2, 4, 5]
+  - Nodo 2 ->  []
+  - Nodo 3 -> [0, 1, 2, 4, 5]
+  - Nodo 4 -> []
+  - Nodo 5 -> [4]
 
  
