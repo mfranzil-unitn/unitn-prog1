@@ -4,7 +4,6 @@
 
 using std::cout;
 using std::endl;
-using std::pair;
 
 struct fake_pair{
     node* first;
